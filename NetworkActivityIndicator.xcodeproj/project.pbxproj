@@ -21,6 +21,7 @@
 		C9F5E9921880E05A005A7FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E9741880E05A005A7FEC /* UIKit.framework */; };
 		C9F5E99A1880E05A005A7FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F5E9981880E05A005A7FEC /* InfoPlist.strings */; };
 		C9F5E99C1880E05A005A7FEC /* NetworkActivityIndicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E99B1880E05A005A7FEC /* NetworkActivityIndicatorTests.m */; };
+		C9F5E9A71880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E9A61880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C9F5E9971880E05A005A7FEC /* NetworkActivityIndicatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetworkActivityIndicatorTests-Info.plist"; sourceTree = "<group>"; };
 		C9F5E9991880E05A005A7FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9F5E99B1880E05A005A7FEC /* NetworkActivityIndicatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkActivityIndicatorTests.m; sourceTree = "<group>"; };
+		C9F5E9A51880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+NetworkActivityIndicator.h"; sourceTree = "<group>"; };
+		C9F5E9A61880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+NetworkActivityIndicator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				C9F5E9821880E05A005A7FEC /* Main.storyboard */,
 				C9F5E9851880E05A005A7FEC /* NAIViewController.h */,
 				C9F5E9861880E05A005A7FEC /* NAIViewController.m */,
+				C9F5E9A51880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.h */,
+				C9F5E9A61880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m */,
 				C9F5E9881880E05A005A7FEC /* Images.xcassets */,
 				C9F5E9771880E05A005A7FEC /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F5E9A71880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				C9F5E9871880E05A005A7FEC /* NAIViewController.m in Sources */,
 				C9F5E97D1880E05A005A7FEC /* main.m in Sources */,
 				C9F5E9811880E05A005A7FEC /* NAIAppDelegate.m in Sources */,
