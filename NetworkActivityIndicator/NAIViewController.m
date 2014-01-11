@@ -8,19 +8,10 @@
 
 #import "NAIViewController.h"
 
+// Import the UIApplication category for Network Activity Indicator
 #import "UIApplication+NetworkActivityIndicator.h"
 
-@interface NAIViewController ()
-
-@end
-
 @implementation NAIViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
 // For the sake of this demo, all cells are the same.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -32,6 +23,7 @@
 	return cell;
 }
 
+// Selected table view row
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -50,12 +42,6 @@
 		cell.textLabel.textColor = [UIColor colorWithRed:1.0f green:0.22f blue:0.22f alpha:1.0f];
 		[[UIApplication sharedApplication] beganNetworkActivity];
 	}
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
