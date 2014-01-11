@@ -38,7 +38,7 @@ static void * NumberOfConnectionsPropertyKey;
 {
 	// Get the number of connections, increment
 	NSNumber *numberOfConnections = [self numberOfConnections];
-	numberOfConnections = [NSNumber numberWithInt:[numberOfConnections integerValue] + 1];
+	numberOfConnections = [NSNumber numberWithInt:([numberOfConnections integerValue]+1.0)];
 	
 	// Save the number of connections
 	[self setNumberOfConnections:numberOfConnections];
@@ -53,7 +53,7 @@ static void * NumberOfConnectionsPropertyKey;
 {
 	// Get the number of connections, decrement
 	NSNumber *numberOfConnections = [self numberOfConnections];
-	numberOfConnections = [NSNumber numberWithInt:[numberOfConnections integerValue] - 1];
+	numberOfConnections = [NSNumber numberWithInt:([numberOfConnections integerValue]-1.0f)];
 	
 	// Save the number of connections
 	[self setNumberOfConnections:numberOfConnections];

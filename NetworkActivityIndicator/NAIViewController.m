@@ -30,17 +30,19 @@
 	// Not excellent, but done for simplicity of the demo project
 	UIActivityIndicatorView *spinner = (UIActivityIndicatorView *) cell.accessoryView;
 	
-	// If the individual download is active or not
-	if ( [spinner isAnimating ] ) {
-		[spinner stopAnimating];
-		cell.textLabel.text = @"Start Simulated Activity";
-		cell.textLabel.textColor = [UIColor colorWithRed:0.0f green:122.0f/255.0f blue:1.0f alpha:1.0f];
-		[[UIApplication sharedApplication] endedNetworkActivity];
-	} else {
+	// If the individual download is starting or stopping
+	BOOL startingActivity = ![spinner isAnimating];
+	
+	if ( startingActivity ) {
 		[spinner startAnimating];
+		[[UIApplication sharedApplication] beganNetworkActivity];
 		cell.textLabel.text = @"Stop Simulated Activity";
 		cell.textLabel.textColor = [UIColor colorWithRed:1.0f green:0.22f blue:0.22f alpha:1.0f];
-		[[UIApplication sharedApplication] beganNetworkActivity];
+	} else {
+		[spinner stopAnimating];
+		[[UIApplication sharedApplication] endedNetworkActivity];
+		cell.textLabel.text = @"Start Simulated Activity";
+		cell.textLabel.textColor = [UIColor colorWithRed:0.0f green:122.0f/255.0f blue:1.0f alpha:1.0f];
 	}
 }
 
