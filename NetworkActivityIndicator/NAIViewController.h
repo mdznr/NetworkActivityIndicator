@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NAIViewController : UIViewController
+@interface NAIViewController : UITableViewController
 
 @end

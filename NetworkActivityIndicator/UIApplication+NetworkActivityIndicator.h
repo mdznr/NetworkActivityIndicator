@@ -19,6 +19,6 @@
 - (void)beganNetworkActivity;
 
 /// Tell the application that a session of network activity has begun. The network activity indicator will remain showing or hide depending the presence of other ongoing network activity in the app.
-- (void)stoppedNetworkActivity;
+- (void)endedNetworkActivity;
 
 @end

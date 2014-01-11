@@ -71,7 +71,7 @@ static void * NumberOfConnectionsPropertyKey;
 	[self incrementNumberOfConnections];
 }
 
-- (void)stoppedNetworkActivity
+- (void)endedNetworkActivity;
 {
 	[self decrementNumberOfConnections];
 }
