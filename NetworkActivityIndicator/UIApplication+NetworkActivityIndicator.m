@@ -65,7 +65,7 @@ static void *NumberOfConnectionsPropertyKey;
 }
 
 
-#pragma Public API
+#pragma mark Public API
 
 - (void)beganNetworkActivity
 {
