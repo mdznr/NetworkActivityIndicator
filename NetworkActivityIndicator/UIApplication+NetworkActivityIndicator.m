@@ -12,20 +12,18 @@
 
 @implementation UIApplication (NetworkActivityIndicator)
 
-// UIApplication is a singleton so we can just use a static global.
-static volatile int32_t g_numberOfConnections;
+static volatile int32_t numberOfActiveNetworkConnections;
 
 #pragma mark Public API
 
 - (void)beganNetworkActivity
 {
-    // Using interlocked atomic operations to avoid races and reduce complexity.
-	self.networkActivityIndicatorVisible = OSAtomicAdd32(1, &g_numberOfConnections) > 0;
+	self.networkActivityIndicatorVisible = OSAtomicAdd32(1, &numberOfActiveNetworkConnections) > 0;
 }
 
 - (void)endedNetworkActivity
 {
-	self.networkActivityIndicatorVisible = OSAtomicAdd32(-1, &g_numberOfConnections) > 0;
+	self.networkActivityIndicatorVisible = OSAtomicAdd32(-1, &numberOfActiveNetworkConnections) > 0;
 }
 
 @end
