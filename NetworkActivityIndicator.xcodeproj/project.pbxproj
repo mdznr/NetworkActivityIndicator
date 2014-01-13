@@ -1,482 +1,1053 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C9F5E9711880E05A005A7FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E9701880E05A005A7FEC /* Foundation.framework */; };
-		C9F5E9731880E05A005A7FEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E9721880E05A005A7FEC /* CoreGraphics.framework */; };
-		C9F5E9751880E05A005A7FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E9741880E05A005A7FEC /* UIKit.framework */; };
-		C9F5E97B1880E05A005A7FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F5E9791880E05A005A7FEC /* InfoPlist.strings */; };
-		C9F5E97D1880E05A005A7FEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E97C1880E05A005A7FEC /* main.m */; };
-		C9F5E9811880E05A005A7FEC /* NAIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E9801880E05A005A7FEC /* NAIAppDelegate.m */; };
-		C9F5E9841880E05A005A7FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F5E9821880E05A005A7FEC /* Main.storyboard */; };
-		C9F5E9871880E05A005A7FEC /* NAIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E9861880E05A005A7FEC /* NAIViewController.m */; };
-		C9F5E9891880E05A005A7FEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F5E9881880E05A005A7FEC /* Images.xcassets */; };
-		C9F5E9901880E05A005A7FEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E98F1880E05A005A7FEC /* XCTest.framework */; };
-		C9F5E9911880E05A005A7FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E9701880E05A005A7FEC /* Foundation.framework */; };
-		C9F5E9921880E05A005A7FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F5E9741880E05A005A7FEC /* UIKit.framework */; };
-		C9F5E99A1880E05A005A7FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F5E9981880E05A005A7FEC /* InfoPlist.strings */; };
-		C9F5E99C1880E05A005A7FEC /* NetworkActivityIndicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E99B1880E05A005A7FEC /* NetworkActivityIndicatorTests.m */; };
-		C9F5E9A71880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F5E9A61880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C9F5E9931880E05A005A7FEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9F5E9651880E05A005A7FEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9F5E96C1880E05A005A7FEC;
-			remoteInfo = NetworkActivityIndicator;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		C9F5E96D1880E05A005A7FEC /* NetworkActivityIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkActivityIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F5E9701880E05A005A7FEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C9F5E9721880E05A005A7FEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C9F5E9741880E05A005A7FEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C9F5E9781880E05A005A7FEC /* NetworkActivityIndicator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetworkActivityIndicator-Info.plist"; sourceTree = "<group>"; };
-		C9F5E97A1880E05A005A7FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9F5E97C1880E05A005A7FEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C9F5E97E1880E05A005A7FEC /* NetworkActivityIndicator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkActivityIndicator-Prefix.pch"; sourceTree = "<group>"; };
-		C9F5E97F1880E05A005A7FEC /* NAIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAIAppDelegate.h; sourceTree = "<group>"; };
-		C9F5E9801880E05A005A7FEC /* NAIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAIAppDelegate.m; sourceTree = "<group>"; };
-		C9F5E9831880E05A005A7FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C9F5E9851880E05A005A7FEC /* NAIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAIViewController.h; sourceTree = "<group>"; };
-		C9F5E9861880E05A005A7FEC /* NAIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAIViewController.m; sourceTree = "<group>"; };
-		C9F5E9881880E05A005A7FEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9F5E98E1880E05A005A7FEC /* NetworkActivityIndicatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkActivityIndicatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F5E98F1880E05A005A7FEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C9F5E9971880E05A005A7FEC /* NetworkActivityIndicatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NetworkActivityIndicatorTests-Info.plist"; sourceTree = "<group>"; };
-		C9F5E9991880E05A005A7FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9F5E99B1880E05A005A7FEC /* NetworkActivityIndicatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkActivityIndicatorTests.m; sourceTree = "<group>"; };
-		C9F5E9A51880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+NetworkActivityIndicator.h"; sourceTree = "<group>"; };
-		C9F5E9A61880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+NetworkActivityIndicator.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C9F5E96A1880E05A005A7FEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F5E9731880E05A005A7FEC /* CoreGraphics.framework in Frameworks */,
-				C9F5E9751880E05A005A7FEC /* UIKit.framework in Frameworks */,
-				C9F5E9711880E05A005A7FEC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9F5E98B1880E05A005A7FEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F5E9901880E05A005A7FEC /* XCTest.framework in Frameworks */,
-				C9F5E9921880E05A005A7FEC /* UIKit.framework in Frameworks */,
-				C9F5E9911880E05A005A7FEC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C9F5E9641880E05A005A7FEC = {
-			isa = PBXGroup;
-			children = (
-				C9F5E9761880E05A005A7FEC /* NetworkActivityIndicator */,
-				C9F5E9951880E05A005A7FEC /* NetworkActivityIndicatorTests */,
-				C9F5E96F1880E05A005A7FEC /* Frameworks */,
-				C9F5E96E1880E05A005A7FEC /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C9F5E96E1880E05A005A7FEC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9F5E96D1880E05A005A7FEC /* NetworkActivityIndicator.app */,
-				C9F5E98E1880E05A005A7FEC /* NetworkActivityIndicatorTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C9F5E96F1880E05A005A7FEC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C9F5E9701880E05A005A7FEC /* Foundation.framework */,
-				C9F5E9721880E05A005A7FEC /* CoreGraphics.framework */,
-				C9F5E9741880E05A005A7FEC /* UIKit.framework */,
-				C9F5E98F1880E05A005A7FEC /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9F5E9761880E05A005A7FEC /* NetworkActivityIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				C9F5E97F1880E05A005A7FEC /* NAIAppDelegate.h */,
-				C9F5E9801880E05A005A7FEC /* NAIAppDelegate.m */,
-				C9F5E9821880E05A005A7FEC /* Main.storyboard */,
-				C9F5E9851880E05A005A7FEC /* NAIViewController.h */,
-				C9F5E9861880E05A005A7FEC /* NAIViewController.m */,
-				C9F5E9A51880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.h */,
-				C9F5E9A61880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m */,
-				C9F5E9881880E05A005A7FEC /* Images.xcassets */,
-				C9F5E9771880E05A005A7FEC /* Supporting Files */,
-			);
-			path = NetworkActivityIndicator;
-			sourceTree = "<group>";
-		};
-		C9F5E9771880E05A005A7FEC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9F5E9781880E05A005A7FEC /* NetworkActivityIndicator-Info.plist */,
-				C9F5E9791880E05A005A7FEC /* InfoPlist.strings */,
-				C9F5E97C1880E05A005A7FEC /* main.m */,
-				C9F5E97E1880E05A005A7FEC /* NetworkActivityIndicator-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C9F5E9951880E05A005A7FEC /* NetworkActivityIndicatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				C9F5E99B1880E05A005A7FEC /* NetworkActivityIndicatorTests.m */,
-				C9F5E9961880E05A005A7FEC /* Supporting Files */,
-			);
-			path = NetworkActivityIndicatorTests;
-			sourceTree = "<group>";
-		};
-		C9F5E9961880E05A005A7FEC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9F5E9971880E05A005A7FEC /* NetworkActivityIndicatorTests-Info.plist */,
-				C9F5E9981880E05A005A7FEC /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C9F5E96C1880E05A005A7FEC /* NetworkActivityIndicator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9F5E99F1880E05A005A7FEC /* Build configuration list for PBXNativeTarget "NetworkActivityIndicator" */;
-			buildPhases = (
-				C9F5E9691880E05A005A7FEC /* Sources */,
-				C9F5E96A1880E05A005A7FEC /* Frameworks */,
-				C9F5E96B1880E05A005A7FEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NetworkActivityIndicator;
-			productName = NetworkActivityIndicator;
-			productReference = C9F5E96D1880E05A005A7FEC /* NetworkActivityIndicator.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C9F5E98D1880E05A005A7FEC /* NetworkActivityIndicatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9F5E9A21880E05A005A7FEC /* Build configuration list for PBXNativeTarget "NetworkActivityIndicatorTests" */;
-			buildPhases = (
-				C9F5E98A1880E05A005A7FEC /* Sources */,
-				C9F5E98B1880E05A005A7FEC /* Frameworks */,
-				C9F5E98C1880E05A005A7FEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9F5E9941880E05A005A7FEC /* PBXTargetDependency */,
-			);
-			name = NetworkActivityIndicatorTests;
-			productName = NetworkActivityIndicatorTests;
-			productReference = C9F5E98E1880E05A005A7FEC /* NetworkActivityIndicatorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C9F5E9651880E05A005A7FEC /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = NAI;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Matt Zanchelli";
-				TargetAttributes = {
-					C9F5E98D1880E05A005A7FEC = {
-						TestTargetID = C9F5E96C1880E05A005A7FEC;
-					};
-				};
-			};
-			buildConfigurationList = C9F5E9681880E05A005A7FEC /* Build configuration list for PBXProject "NetworkActivityIndicator" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C9F5E9641880E05A005A7FEC;
-			productRefGroup = C9F5E96E1880E05A005A7FEC /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C9F5E96C1880E05A005A7FEC /* NetworkActivityIndicator */,
-				C9F5E98D1880E05A005A7FEC /* NetworkActivityIndicatorTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C9F5E96B1880E05A005A7FEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F5E9891880E05A005A7FEC /* Images.xcassets in Resources */,
-				C9F5E97B1880E05A005A7FEC /* InfoPlist.strings in Resources */,
-				C9F5E9841880E05A005A7FEC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9F5E98C1880E05A005A7FEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F5E99A1880E05A005A7FEC /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C9F5E9691880E05A005A7FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F5E9A71880E07C005A7FEC /* UIApplication+NetworkActivityIndicator.m in Sources */,
-				C9F5E9871880E05A005A7FEC /* NAIViewController.m in Sources */,
-				C9F5E97D1880E05A005A7FEC /* main.m in Sources */,
-				C9F5E9811880E05A005A7FEC /* NAIAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9F5E98A1880E05A005A7FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F5E99C1880E05A005A7FEC /* NetworkActivityIndicatorTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C9F5E9941880E05A005A7FEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9F5E96C1880E05A005A7FEC /* NetworkActivityIndicator */;
-			targetProxy = C9F5E9931880E05A005A7FEC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C9F5E9791880E05A005A7FEC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9F5E97A1880E05A005A7FEC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C9F5E9821880E05A005A7FEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9F5E9831880E05A005A7FEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9F5E9981880E05A005A7FEC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9F5E9991880E05A005A7FEC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C9F5E99D1880E05A005A7FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		C9F5E99E1880E05A005A7FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C9F5E9A01880E05A005A7FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch";
-				INFOPLIST_FILE = "NetworkActivityIndicator/NetworkActivityIndicator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		C9F5E9A11880E05A005A7FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch";
-				INFOPLIST_FILE = "NetworkActivityIndicator/NetworkActivityIndicator-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		C9F5E9A31880E05A005A7FEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetworkActivityIndicator.app/NetworkActivityIndicator";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "NetworkActivityIndicatorTests/NetworkActivityIndicatorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C9F5E9A41880E05A005A7FEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NetworkActivityIndicator.app/NetworkActivityIndicator";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch";
-				INFOPLIST_FILE = "NetworkActivityIndicatorTests/NetworkActivityIndicatorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C9F5E9681880E05A005A7FEC /* Build configuration list for PBXProject "NetworkActivityIndicator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9F5E99D1880E05A005A7FEC /* Debug */,
-				C9F5E99E1880E05A005A7FEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C9F5E99F1880E05A005A7FEC /* Build configuration list for PBXNativeTarget "NetworkActivityIndicator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9F5E9A01880E05A005A7FEC /* Debug */,
-				C9F5E9A11880E05A005A7FEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C9F5E9A21880E05A005A7FEC /* Build configuration list for PBXNativeTarget "NetworkActivityIndicatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9F5E9A31880E05A005A7FEC /* Debug */,
-				C9F5E9A41880E05A005A7FEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C9F5E9651880E05A005A7FEC /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>C9F5E9641880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E9761880E05A005A7FEC</string>
+				<string>C9F5E9951880E05A005A7FEC</string>
+				<string>C9F5E96F1880E05A005A7FEC</string>
+				<string>C9F5E96E1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9651880E05A005A7FEC</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>NAI</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Matt Zanchelli</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>C9F5E98D1880E05A005A7FEC</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>C9F5E96C1880E05A005A7FEC</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C9F5E9681880E05A005A7FEC</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C9F5E9641880E05A005A7FEC</string>
+			<key>productRefGroup</key>
+			<string>C9F5E96E1880E05A005A7FEC</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C9F5E96C1880E05A005A7FEC</string>
+				<string>C9F5E98D1880E05A005A7FEC</string>
+			</array>
+		</dict>
+		<key>C9F5E9681880E05A005A7FEC</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C9F5E99D1880E05A005A7FEC</string>
+				<string>C9F5E99E1880E05A005A7FEC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C9F5E9691880E05A005A7FEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F5E9A71880E07C005A7FEC</string>
+				<string>C9F5E9871880E05A005A7FEC</string>
+				<string>C9F5E97D1880E05A005A7FEC</string>
+				<string>C9F5E9811880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C9F5E96A1880E05A005A7FEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F5E9731880E05A005A7FEC</string>
+				<string>C9F5E9751880E05A005A7FEC</string>
+				<string>C9F5E9711880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C9F5E96B1880E05A005A7FEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F5E9891880E05A005A7FEC</string>
+				<string>C9F5E97B1880E05A005A7FEC</string>
+				<string>C9F5E9841880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C9F5E96C1880E05A005A7FEC</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C9F5E99F1880E05A005A7FEC</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C9F5E9691880E05A005A7FEC</string>
+				<string>C9F5E96A1880E05A005A7FEC</string>
+				<string>C9F5E96B1880E05A005A7FEC</string>
+				<string>OBJCLEANCUSTOMRUNSCRIPTT</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>NetworkActivityIndicator</string>
+			<key>productName</key>
+			<string>NetworkActivityIndicator</string>
+			<key>productReference</key>
+			<string>C9F5E96D1880E05A005A7FEC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C9F5E96D1880E05A005A7FEC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>NetworkActivityIndicator.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C9F5E96E1880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E96D1880E05A005A7FEC</string>
+				<string>C9F5E98E1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E96F1880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E9701880E05A005A7FEC</string>
+				<string>C9F5E9721880E05A005A7FEC</string>
+				<string>C9F5E9741880E05A005A7FEC</string>
+				<string>C9F5E98F1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9701880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C9F5E9711880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9701880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9721880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C9F5E9731880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9721880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9741880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C9F5E9751880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9741880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9761880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E97F1880E05A005A7FEC</string>
+				<string>C9F5E9801880E05A005A7FEC</string>
+				<string>C9F5E9821880E05A005A7FEC</string>
+				<string>C9F5E9851880E05A005A7FEC</string>
+				<string>C9F5E9861880E05A005A7FEC</string>
+				<string>C9F5E9A51880E07C005A7FEC</string>
+				<string>C9F5E9A61880E07C005A7FEC</string>
+				<string>C9F5E9881880E05A005A7FEC</string>
+				<string>C9F5E9771880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>NetworkActivityIndicator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9771880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E9781880E05A005A7FEC</string>
+				<string>C9F5E9791880E05A005A7FEC</string>
+				<string>C9F5E97C1880E05A005A7FEC</string>
+				<string>C9F5E97E1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9781880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>NetworkActivityIndicator-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9791880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E97A1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E97A1880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E97B1880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9791880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E97C1880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E97D1880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E97C1880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E97E1880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NetworkActivityIndicator-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E97F1880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NAIAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9801880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NAIAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9811880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9801880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9821880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E9831880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9831880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9841880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9821880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9851880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NAIViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9861880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NAIViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9871880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9861880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9881880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9891880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9881880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E98A1880E05A005A7FEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F5E99C1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C9F5E98B1880E05A005A7FEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F5E9901880E05A005A7FEC</string>
+				<string>C9F5E9921880E05A005A7FEC</string>
+				<string>C9F5E9911880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C9F5E98C1880E05A005A7FEC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C9F5E99A1880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C9F5E98D1880E05A005A7FEC</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C9F5E9A21880E05A005A7FEC</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C9F5E98A1880E05A005A7FEC</string>
+				<string>C9F5E98B1880E05A005A7FEC</string>
+				<string>C9F5E98C1880E05A005A7FEC</string>
+				<string>OBJCLEANCUSTOMRUNSCRIPTT</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C9F5E9941880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>NetworkActivityIndicatorTests</string>
+			<key>productName</key>
+			<string>NetworkActivityIndicatorTests</string>
+			<key>productReference</key>
+			<string>C9F5E98E1880E05A005A7FEC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C9F5E98E1880E05A005A7FEC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>NetworkActivityIndicatorTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C9F5E98F1880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C9F5E9901880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E98F1880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9911880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9701880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9921880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9741880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E9931880E05A005A7FEC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C9F5E9651880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C9F5E96C1880E05A005A7FEC</string>
+			<key>remoteInfo</key>
+			<string>NetworkActivityIndicator</string>
+		</dict>
+		<key>C9F5E9941880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C9F5E96C1880E05A005A7FEC</string>
+			<key>targetProxy</key>
+			<string>C9F5E9931880E05A005A7FEC</string>
+		</dict>
+		<key>C9F5E9951880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E99B1880E05A005A7FEC</string>
+				<string>C9F5E9961880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>NetworkActivityIndicatorTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9961880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E9971880E05A005A7FEC</string>
+				<string>C9F5E9981880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9971880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>NetworkActivityIndicatorTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9981880E05A005A7FEC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C9F5E9991880E05A005A7FEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9991880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E99A1880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9981880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E99B1880E05A005A7FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NetworkActivityIndicatorTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E99C1880E05A005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E99B1880E05A005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9F5E99D1880E05A005A7FEC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C9F5E99E1880E05A005A7FEC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C9F5E99F1880E05A005A7FEC</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C9F5E9A01880E05A005A7FEC</string>
+				<string>C9F5E9A11880E05A005A7FEC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C9F5E9A01880E05A005A7FEC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>NetworkActivityIndicator/NetworkActivityIndicator-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C9F5E9A11880E05A005A7FEC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>NetworkActivityIndicator/NetworkActivityIndicator-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C9F5E9A21880E05A005A7FEC</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C9F5E9A31880E05A005A7FEC</string>
+				<string>C9F5E9A41880E05A005A7FEC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C9F5E9A31880E05A005A7FEC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/NetworkActivityIndicator.app/NetworkActivityIndicator</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>NetworkActivityIndicatorTests/NetworkActivityIndicatorTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C9F5E9A41880E05A005A7FEC</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/NetworkActivityIndicator.app/NetworkActivityIndicator</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>NetworkActivityIndicator/NetworkActivityIndicator-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>NetworkActivityIndicatorTests/NetworkActivityIndicatorTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C9F5E9A51880E07C005A7FEC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIApplication+NetworkActivityIndicator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9A61880E07C005A7FEC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIApplication+NetworkActivityIndicator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9F5E9A71880E07C005A7FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9F5E9A61880E07C005A7FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>OBJCLEANCUSTOMRUNSCRIPTT</key>
+		<dict>
+			<key>buildActionMask</key>
+			<integer>2147483647</integer>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Objective-Clean Run Script</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<integer>0</integer>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then
+if [[ -d "${LOCAL_APPS_DIR}/Objective-Clean.app" ]]; then 
+"${LOCAL_APPS_DIR}"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean "${SRCROOT}" 
+else
+echo "warning: You have to install and set up Objective-Clean to use its features!" 
+fi
+fi</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C9F5E9651880E05A005A7FEC</string>
+</dict>
+</plist>

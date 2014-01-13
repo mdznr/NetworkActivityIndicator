@@ -34,13 +34,19 @@
 	BOOL startingActivity = ![spinner isAnimating];
 	
 	if ( startingActivity ) {
+		// Animate the spinner in the cell
 		[spinner startAnimating];
+		// Tell the application (simulated) network activity has begun
 		[[UIApplication sharedApplication] beganNetworkActivity];
+		// Update cell label to red "Stop"
 		cell.textLabel.text = @"Stop Simulated Activity";
 		cell.textLabel.textColor = [UIColor colorWithRed:1.0f green:0.22f blue:0.22f alpha:1.0f];
 	} else {
+		// Stop the animation (end simulated network activity)
 		[spinner stopAnimating];
+		// Tell the application (simulated) neywork activity has stopped
 		[[UIApplication sharedApplication] endedNetworkActivity];
+		// Update cell label to blue "Start"
 		cell.textLabel.text = @"Start Simulated Activity";
 		cell.textLabel.textColor = [UIColor colorWithRed:0.0f green:122.0f/255.0f blue:1.0f alpha:1.0f];
 	}

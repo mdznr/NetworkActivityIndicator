@@ -10,9 +10,10 @@
 
 #import <objc/runtime.h>
 
-static void * NumberOfConnectionsPropertyKey;
+static void *NumberOfConnectionsPropertyKey;
 
 @implementation UIApplication (NetworkActivityIndicator)
+
 
 #pragma mark Number of Connections
 
