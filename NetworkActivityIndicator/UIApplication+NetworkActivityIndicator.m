@@ -8,73 +8,24 @@
 
 #import "UIApplication+NetworkActivityIndicator.h"
 
-#import <objc/runtime.h>
-
-static void *NumberOfConnectionsPropertyKey;
+#import <libkern/OSAtomic.h>
 
 @implementation UIApplication (NetworkActivityIndicator)
 
-
-#pragma mark Number of Connections
-
-- (NSNumber *)numberOfConnections
-{
-	NSNumber *result = objc_getAssociatedObject(self, &NumberOfConnectionsPropertyKey);
-	if (result == nil) {
-		result = @(0);
-		objc_setAssociatedObject(self, &NumberOfConnectionsPropertyKey, result, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-	}
-	return result;
-}
-
-- (void)setNumberOfConnections:(NSNumber *)numberOfConnections
-{
-	objc_setAssociatedObject(self, &NumberOfConnectionsPropertyKey, numberOfConnections, OBJC_ASSOCIATION_RETAIN);
-}
-
-
-#pragma mark Increment/Decrement
-
-- (void)incrementNumberOfConnections
-{
-	// Get the number of connections, increment
-	NSNumber *numberOfConnections = [self numberOfConnections];
-	numberOfConnections = @([numberOfConnections integerValue] + 1);
-	
-	// Save the number of connections
-	[self setNumberOfConnections:numberOfConnections];
-	
-	// Show the network activity indicator
-	if ( !self.networkActivityIndicatorVisible ) {
-		self.networkActivityIndicatorVisible = YES;
-	}
-}
-
-- (void)decrementNumberOfConnections
-{
-	// Get the number of connections, decrement
-	NSNumber *numberOfConnections = [self numberOfConnections];
-	numberOfConnections = @([numberOfConnections integerValue] - 1);
-	
-	// Save the number of connections
-	[self setNumberOfConnections:numberOfConnections];
-	
-	if ( self.networkActivityIndicatorVisible && numberOfConnections.integerValue < 1 ) {
-		self.networkActivityIndicatorVisible = NO;
-	}
-}
-
+// UIApplication is a singleton so we can just use a static global.
+static volatile int32_t g_numberOfConnections;
 
 #pragma mark Public API
 
 - (void)beganNetworkActivity
 {
-	[self incrementNumberOfConnections];
+    // Using interlocked atomic operations to avoid races and reduce complexity.
+	self.networkActivityIndicatorVisible = OSAtomicAdd32(1, &g_numberOfConnections) > 0;
 }
 
-- (void)endedNetworkActivity;
+- (void)endedNetworkActivity
 {
-	[self decrementNumberOfConnections];
+	self.networkActivityIndicatorVisible = OSAtomicAdd32(-1, &g_numberOfConnections) > 0;
 }
 
 @end
