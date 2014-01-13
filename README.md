@@ -2,7 +2,7 @@
 
 ### Overview
 
-The other day, I built a project to improve the Network Activity Indicator on iOS. The project contains a fix to the API and a demo application showing how the changes are used.
+A small project to improve the Network Activity Indicator on iOS. The project contains a fix to the API and a demo application showing how the changes are used.
 
 
 ### What is the Network Activity Spinner?
