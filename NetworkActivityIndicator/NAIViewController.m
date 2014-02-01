@@ -8,9 +8,6 @@
 
 #import "NAIViewController.h"
 
-// Import the UIApplication category for Network Activity Indicator
-#import "UIApplication+NetworkActivityIndicator.h"
-
 @implementation NAIViewController
 
 // For the sake of this demo, all cells are the same.
