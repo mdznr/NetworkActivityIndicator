@@ -7,7 +7,7 @@ A small project to improve the Network Activity Indicator on iOS. The project co
 
 ### What is the Network Activity Indicator?
 
-![iOS Network Activity Indicator Screenshot](Screenshot - Network Activity Indicator.png “Network Activity Indicator”)
+![iOS Network Activity Indicator Screenshot](Screenshot%20-%20Network%20Activity%20Indicator.png “Network Activity Indicator”)
 
 On iOS, there’s a small spinner in the system status bar that is visible when the current app is performing network activity. The indicator is conveniently located next to the the cellular signal strength and WiFi strength indicators. This piece of UI gives great feedback to the user about ongoing network activity. The indicator can be used by the user to troubleshoot small issues. If content is taking a while to load, the user can assess the problem. The strength of the network connection (shown next to the indicator) may be weak, and slowing down the process. Depending on the connection status, the user may decide it is not worth waiting for the content to load and move on to working on something else. Ideally, none of these issues would even occur in the first place.  Due to technical limitations, this is not possible, thus the existence of the status bar and the network activity indicator.
 
@@ -62,7 +62,7 @@ When initiating or handling the conclusion of relevant network activity, the res
 
 The demo app included in the project shows the application being told that some network activity has started and stopped after tapping on a button simulating ongoing network activity.
 
-![Demo application screenshot](Screenshot - Demo App.png “Included demo application”)
+![Demo application screenshot](Screenshot%20-%20Demo%20App.png “Included demo application”)
 
 Ideally, the `networkActivityIndicatorVisible` property could just be removed or set to be read-only. However, because `UIApplication` should remain reasonably backwards compatible, and keep a complete history of the header, it can’t be. I am unsure if part of a property can be deprecated (set from read/write to read-only). Deprecating the `setNetworkActivityIndicatorVisible:` method (the property’s setter) will likely not work because the property is still assumed to be writable. When using dot syntax for the property, the change to the setter method might not be caught.
 
