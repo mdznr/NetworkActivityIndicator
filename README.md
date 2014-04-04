@@ -4,6 +4,10 @@
 
 A small project to improve the Network Activity Indicator on iOS. The project contains a fix to the API and a demo application showing how the changes are used.
 
+[Keynote Presentation (HTML)](http://mdznr.com/rcos/talks/goodapidesign)
+
+[Presentation with notes (PDF)](http://mdznr.com/rcos/talks/goodapidesign.pdf)
+
 
 ### What is the Network Activity Indicator?
 
