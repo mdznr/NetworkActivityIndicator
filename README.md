@@ -32,9 +32,9 @@ Without action, the network indicator is doomed to spirally decline into nothing
 
 The current API for showing or hiding the spinner is just that. The API allows the app to directly show and hide the spinner. The indicator’s visibility is just a Boolean property of the application:
 
-`
+```objc
 @property(nonatomic, getter=isNetworkActivityIndicatorVisible) BOOL networkActivityIndicatorVisible
-`
+```
 
 This seems pretty simple, right? The app is responsible for turning it on and back off itself.
 
@@ -59,8 +59,10 @@ The solution I came up with involves keeping a count of the number of ongoing ne
 
 The changes I made to `UIApplication` is such that it still does two things regarding the networking activity indicator. However, the changes align with what developers may have previously done. The implementation is such that, using the counter, the expected behavior of the spinner is the actual behavior. The new interface is:
 
-	- (void)beganNetworkActivity;
-	- (void)endedNetworkActivity;
+```objc
+- (void)beganNetworkActivity;
+- (void)endedNetworkActivity;
+```
 
 When initiating or handling the conclusion of relevant network activity, the responsible code tells the application so. The application object is responsible for handling the visibility of the spinner.
 
